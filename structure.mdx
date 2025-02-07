@@ -1,0 +1,64 @@
+---
+title: 'Project Structure'
+description: 'Overview of project structure and key files'
+---
+
+## Root Folders & Files
+
+- _src/.github_: GitHub Actions workflows or repo-specific configs.
+- _src/.next_: Next.js framework config/customizations.
+- _src/.turbo_: Turborepo utilities/cache configs.
+
+- **src/apps**: Container for multiple Next.js apps (monorepo setup).
+  - **/api**: Backend API endpoints (REST/GraphQL).
+  - **/app**: Primary Next.js frontend application.
+  - **/docs**: Project documentation/markdown files.
+  - **/email**: Email templates/transactional email services.
+  - **/storybook**: UI component documentation/story demos.
+  - **/studio**: CMS content studio (e.g., Sanity/Contentful).
+  - **/web**: Marketing/landing pages (static site).
+
+- _src/node_modules_: Installed NPM/PNPM dependencies.
+
+- **src/packages**: Shared code/modules across the monorepo.
+
+- _src/scripts_: Utility scripts for project initialization and updates.
+- _src/turbo_: Package generation configurations and templates.
+
+### Packages Subfolders (Shared Modules)
+
+- **ai**: AI model integrations/utilities.
+- **analytics**: User tracking/metrics tools.
+- **auth**: Authentication providers (e.g., NextAuth).
+
+- **cms**: Headless CMS connectors.
+- **collaboration**: Real-time collaboration features.
+- **database**: Database ORM (e.g., Prisma) setup.
+- **design-system**: Reusable UI components/theming.
+- **email**: Email service config/templates.
+- **feature-flags**: Feature toggle management.
+- **next-config**: Next.js shared config presets.
+- **notifications**: Push/email notification services.
+- **observability**: Logging/monitoring tools.
+- **payments**: Stripe/Payment gateway logic.
+- **rate-limit**: API rate-limiting logic.
+- **security**: Security middleware/auth utilities.
+- **seo**: SEO meta tags/sitemap tools.
+- **storage**: File storage (e.g., S3/Azure Blob).
+- **tailwind-config**: Tailwind CSS theme/config.
+- **testing**: Testing utils (e2e/unit tests).
+- **typescript-config**: Shared TS configs.
+- **webhooks**: Webhook handlers/endpoints.
+
+### Key Root Files
+
+- **.cursorrules.example**: Editor config for Cursor IDE.
+- **.gitignore**: Files excluded from Git.
+- **biome.json**: Biome linter/formatter config.
+- **next-env.d.ts**: Next.js TypeScript types.
+- **package.json**: PNPM dependencies/scripts.
+- **pnpm-*.yaml**: PNPM lockfile/workspace config.
+- **README.md**: Project overview/documentation.
+- **tsconfig.json**: TypeScript compiler settings.
+- **tsup.config.ts**: Bundler config (for libraries).
+- **turbo.json**: Turborepo build pipeline tasks.

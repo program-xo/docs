@@ -1,13 +1,12 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "al-Fusha.ai",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -16,20 +15,46 @@
           {
             "group": "Get Started",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+              "overview",
+              "structure"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Apps",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "apps/🔗 API",
+              "apps/📲 App",
+              "apps/📝 Docs",
+              "apps/🎨 Email",
+              "apps/📚 Storybook",
+              "apps/🗄️ Studio",
+              "apps/🌐 Web"
+            ]
+          },
+          {
+            "group": "Packages",
+            "pages": [
+              "packages/AI",
+              "packages/Analytics",
+              "packages/Auth",
+              "packages/CMS",
+              "packages/Collaboration",
+              "packages/Database",
+              "packages/Design-System",
+              "packages/Email",
+              "packages/Feature-Flags",
+              "packages/Next-Config",
+              "packages/Notifications",
+              "packages/Observability",
+              "packages/Payments",
+              "packages/Rate-Limit",
+              "packages/Security",
+              "packages/SEO",
+              "packages/Storage",
+              "packages/Tailwind-Config",
+              "packages/Testing",
+              "packages/TypeScript-Config",
+              "packages/Webhooks"
             ]
           }
         ]
@@ -53,49 +78,77 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    ]
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Add a new feature",
+        "href": "http://localhost:9999/features/new"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Work on an existing feature",
+      "href": "http://localhost:9999/features/existing"
     }
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "links": [
+      {
+        "header": "Service Providers",
+        "items": [
+          {
+            "label": "Supabase",
+            "href": "https://supabase.com"
+          },
+          {
+            "label": "Stripe",
+            "href": "https://stripe.com"
+          },
+          {
+            "label": "Clerk",
+            "href": "https://clerk.dev"
+          },
+          {
+            "label": "Resend",
+            "href": "https://resend.com"
+          },
+          {
+            "label": "BetterStack",
+            "href": "https://betterstack.com"
+          },
+          {
+            "label": "Liveblocks",
+            "href": "https://liveblocks.io"
+          },
+          {
+            "label": "Google Analytics",
+            "href": "https://analytics.google.com"
+          },
+          {
+            "label": "PostHog",
+            "href": "https://posthog.com"
+          },
+          {
+            "label": "Flagsmith",
+            "href": "https://flagsmith.com"
+          }
+        ]
+      },
+      {
+        "header": "More Tools",
+        "items": [
+          {
+            "label": "Documentation",
+            "href": "https://mintlify.com/docs"
+          },
+          {
+            "label": "Community",
+            "href": "https://mintlify.com/community"
+          }
+        ]
+      }
+    ]
   }
 }

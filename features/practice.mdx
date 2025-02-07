@@ -1,0 +1,80 @@
+---
+title: Practice
+description: "Detailed documentation of the al-Fusha.ai practice and review system"
+---
+
+## Overview
+
+The practice system offers users multiple ways to reinforce their learning:
+- Quick exercises for daily practice
+- Spaced repetition review system
+- Interactive flashcards
+- Progress tests
+- Writing practice with feedback
+- Speaking exercises with pronunciation feedback
+
+## User Flow
+
+```mermaid
+flowchart TD
+    A[Practice Hub] --> B[Quick Exercises]
+    A --> C[Flashcards]
+    A --> D[Writing Practice]
+    A --> E[Speaking Practice]
+    A --> F[Progress Tests]
+    B --> G[Complete Exercise]
+    C --> H[Review Cards]
+    D --> I[Get Writing Feedback]
+    E --> J[Get Pronunciation Feedback]
+    F --> K[View Results]
+```
+
+## UI Prototype
+
+### Quick Exercise
+**Translate to Arabic:**
+"The book is on the table"
+[Type your answer...] [Check Answer]
+
+### Flashcards
+**كتاب** [Click to flip]
+[Previous] [Next]
+
+### Writing Practice
+**ك** [Draw this character] [Submit]
+
+### Speaking Practice
+**مرحبا**
+[Record] [Listen]
+
+### Progress Test
+20 questions • 15 minutes
+[Covers recent lessons] [Start Test]
+
+## Technical Implementation Notes
+
+- Exercise generation should:
+  - Use spaced repetition algorithms
+  - Adapt to user performance
+  - Generate varied content
+  - Track error patterns
+- Flashcard system should:
+  - Support multimedia content
+  - Use SRS scheduling
+  - Allow custom decks
+  - Track review history
+- Writing practice should:
+  - Use stroke detection
+  - Provide real-time feedback
+  - Support different scripts
+  - Save practice history
+- Speaking practice should:
+  - Use speech recognition
+  - Analyze pronunciation
+  - Provide audio feedback
+  - Support different dialects
+- Progress testing should:
+  - Generate balanced tests
+  - Adapt difficulty
+  - Provide detailed analysis
+  - Track improvement 
